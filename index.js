@@ -5,6 +5,8 @@ const fs = require('fs');
 require('dotenv/config');
 const http = require('http');
 const port = process.env.PORT || 3000;
+// This is a simple server
+http.createServer().listen(port);
 
 // Init the bot
 const bot = new Discord.Client();
@@ -80,6 +82,10 @@ bot.on('message',msg => {
         msg.channel.send("You do not have acces to this bot command!");
     }  
     }    
+});
+
+bot.on('error', err => {
+    console.log(err);
 });
 
 
