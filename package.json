@@ -16,6 +16,8 @@
     "ffmpeg-binaries": "^4.0.0",
     "fs": "0.0.1-security",
     "heroku": "^7.19.4",
-    "message": "0.0.1"
+    "message": "0.0.1",
+    "node": "^11.6.0",
+    "npm": "^6.5.0"
   }
 }
