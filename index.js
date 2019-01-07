@@ -2,7 +2,6 @@
 const Discord = require('discord.js');
 const settings = require('./settings.json');
 const fs = require('fs');
-const settings = require('./settings.json')
 //require('dotenv/config');
 //const http = require('http');
 //const port = process.env.PORT || 3000;
@@ -72,7 +71,7 @@ bot.on('message',msg => {
 
     if (!command.startsWith(prefix)) return;
 
-    if (bot.command.get(command.slice(prefix.length))){
+    if (bot.commands.get(command.slice(prefix.length))){
     if (validation(allowedRoles.roles,msg.member.roles.array()) || msg.member.id === owner){
         let cmd = bot.commands.get(command.slice(prefix.length));
         if (cmd){
