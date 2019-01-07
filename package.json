@@ -1,0 +1,20 @@
+{
+  "name": "scrimbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabe",
+  "license": "ISC",
+  "dependencies": {
+    "client": "0.0.1",
+    "discord.js": "^11.4.2",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^6.2.0",
+    "ffmpeg-binaries": "^4.0.0",
+    "fs": "0.0.1-security",
+    "message": "0.0.1"
+  }
+}
