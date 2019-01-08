@@ -88,7 +88,7 @@ class Listing {
                     if (this.data[i].users.length > 0){
                         for (var j = 0; j < this.data[i].users.length; j++){
                             if (this.data[i].users[j] === username && this.data[i].users.length > 1){
-                                let tmp = this.data[i].user[j];
+                                let tmp = this.data[i].users[j];
                                 this.data[i].users[j] = this.data[i].users[0];
                                 this.data[i].users[0] = tmp;
                                 
