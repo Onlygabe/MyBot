@@ -1,8 +1,8 @@
 
 module.exports.run = async (bot, message, args) => {
 
-
-    message.channel.send("Next scrim in 1 minute");
+    message.delete();
+    message.channel.send("Next scrim in 1 minute @everyone");
 
 }
 

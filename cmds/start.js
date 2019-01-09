@@ -5,6 +5,7 @@ const ytdl = require('ytdl-core');
 
 
 module.exports.run = async (bot, message, args) => {
+    message.delete();
     let snipeChannel = message.channel;
     const filter = m => !m.author.bot;
     let game = new Listing();
@@ -27,12 +28,13 @@ module.exports.run = async (bot, message, args) => {
     let editLast3 = null;
 
     let startMessage = new Discord.RichEmbed()
-        .setTitle("Toxic Scrims")
+        .setTitle("Snobby Scrims")
         .setDescription("Write your the last 3 digits of you server ID")
         .setColor("#1e8449")
-        .setFooter("Toxic Scrims");
+        .setFooter("Created By OnlyGabe#6694");
 
     message.channel.send({embed: startMessage});
+
 
     let time = 27;
     let editTime = "";
@@ -138,7 +140,7 @@ module.exports.run = async (bot, message, args) => {
     });
 
     const streamOptions = {seek: 0, volume: 1};
-    let voiceChannelID = "530964102781337611";
+    let voiceChannelID = "532059170237841409";
 
     console.log("Starting Voice Command");
 

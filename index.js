@@ -61,7 +61,7 @@ bot.on('ready', async () =>{
 });
 
 
-bot.on('message',msg => {
+bot.on('message', msg => {
     if (msg.channel.type === "dm") return;
     if (msg.author.bot) return;
 
@@ -72,7 +72,7 @@ bot.on('message',msg => {
     if (!command.startsWith(prefix)) return;
 
     if (bot.commands.get(command.slice(prefix.length))){
-    if (validation(allowedRoles.roles,msg.member.roles.array()) || msg.member.id === owner){
+    if (validation(allowedRoles.roles,msg.member.roles.array()) || msg.member.id === owner || message.member.hasPermission("MANAGE_CHANNELS")){
         let cmd = bot.commands.get(command.slice(prefix.length));
         if (cmd){
             cmd.run(bot,msg,args);
