@@ -2,7 +2,7 @@
 
 module.exports.run = async (bot, message, args) => {
     message.delete();
-    message.channel.send("Next Scrim in 30seconds @everyone");
+    message.channel.send("Next Scrim in 30seconds @everone");
 
 
 

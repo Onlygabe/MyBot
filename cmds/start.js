@@ -36,7 +36,7 @@ module.exports.run = async (bot, message, args) => {
     message.channel.send({embed: startMessage});
 
 
-    let time = 27;
+    let time = 28;
     let editTime = "";
 
     let timeEmbed = new Discord.RichEmbed()
